@@ -53,6 +53,9 @@
             display: none;
         }
     }
+    .hidden {
+        display: block !important;
+    }
 }
 
 @media (max-width: 767px) {
@@ -77,6 +80,7 @@
         }
     }
     .portfolio,
+    .certificate,
     .service {
         &-item {
             flex: 0 0 100%;

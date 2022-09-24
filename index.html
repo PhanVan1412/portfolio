@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./assets/css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
     <link rel="stylesheet" href="./assets/css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
     <link rel="stylesheet" href="./assets/css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
-    <link rel="stylesheet" href="./assets/css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
-    <link rel="stylesheet" href="./assets/css/skins/color-5.css" class="alternate-style" title="color-5">
+    <link rel="stylesheet" href="./assets/css/skins/color-4.css" class="alternate-style" title="color-4">
+    <link rel="stylesheet" href="./assets/css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="./assets/css/style-switcher.css">
     <!-- Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,16 +26,17 @@
         <!-- siderbar section starts  -->
         <div class="aside">
             <div class="logo">
-                <a href="#" class="logo"><span>P</span>&T</a>
+                <a href="#home" class="brand"><span>P</span>&T</a>
             </div>
             <div class="nav-toggler">
                 <span></span>
             </div>
             <div class="nav">
                 <ul>
-                    <li><a href="#" class="active"><i class="fas fa-home"></i>home</a></li>
+                    <li><a href="#" class="active" id="home-link"><i class="fas fa-home"></i>home</a></li>
                     <li><a href="#about" id="about-link"><i class="fas fa-user"></i>about</a></li>
                     <li><a href="#portfolio" id="portfolio-link"><i class="fas fa-briefcase"></i>portfolio</a></li>
+                    <li><a href="#certificate" id="certificate-link"><i class="fa-solid fa-certificate"></i>certificate</a></li>
                     <li><a href="#contact" id="contact-link"><i class="fas fa-comments"></i>contact</a></li>
                     <li><a href="#service" id="service-link"><i class="fas fa-list"></i>services</a></li>
                 </ul>
@@ -45,13 +46,13 @@
         <!-- main content -->
         <div class="main-content">
             <!-- home section starts -->
-            <section class="home section">
+            <section class="home section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
                             <h3 class="hello">hello my name's <span>Phan Van Tam</span></h3>
-                            <h3 class="my-profession">I'm a <span class="typing">Web developer</span></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum doloribus facere beatae illum saepe, eveniet incidunt atque. Saepe, eos beatae!...</p>
+                            <h3 class="my-profession">I'm a <span class="typing"></span></h3>
+                            <p>Welcome to my website. This site introduced me. Hope you have a good experience with it. <br>thanks a lot.</p>
                             <a href="#contact" class="btn connect-me">contact me</a>
                         </div>
                         <div class="home-img padd-15">
@@ -278,7 +279,7 @@
                                 </div>
                                 <div class="portfolio-content padd-15">
                                     <h2>Bookly Store</h2>
-                                    <a href="https://phanvan1412.github.io/book-store/" class="btn">view project</a>
+                                    <a href="https://phanvan1412.github.io/book-store/" class="btn" target="_blank">view project</a>
                                 </div>
                             </div>
                         </div>
@@ -289,7 +290,7 @@
                                 </div>
                                 <div class="portfolio-content padd-15">
                                     <h2>Best mobile app</h2>
-                                    <a href="https://phanvan1412.github.io/bestapp/" class="btn">view project</a>
+                                    <a href="https://phanvan1412.github.io/bestapp/" class="btn" target="_blank">view project</a>
                                 </div>
                             </div>
                         </div>
@@ -300,7 +301,7 @@
                                 </div>
                                 <div class="portfolio-content padd-15">
                                     <h2>Hanaseatrip</h2>
-                                    <a href="https://hanaseatrip.com/" class="btn">view project</a>
+                                    <a href="https://hanaseatrip.com/" class="btn" target="_blank">view project</a>
                                 </div>
                             </div>
                         </div>
@@ -311,7 +312,7 @@
                                 </div>
                                 <div class="portfolio-content padd-15">
                                     <h2>Foody</h2>
-                                    <a href="https://phanvan1412.github.io/restaurent-food/" class="btn">view project</a>
+                                    <a href="https://phanvan1412.github.io/restaurent-food/" class="btn" target="_blank">view project</a>
                                 </div>
                             </div>
                         </div>
@@ -322,7 +323,7 @@
                                 </div>
                                 <div class="portfolio-content padd-15">
                                     <h2>Bookly Store</h2>
-                                    <a href="https://phanvan1412.github.io/book-store/" class="btn">view project</a>
+                                    <a href="https://phanvan1412.github.io/book-store/" class="btn" target="_blank">view project</a>
                                 </div>
                             </div>
                         </div>
@@ -333,13 +334,81 @@
                                 </div>
                                 <div class="portfolio-content padd-15">
                                     <h2>Bookly Store</h2>
-                                    <a href="https://phanvan1412.github.io/bestapp/" class="btn">view project</a>
+                                    <a href="https://phanvan1412.github.io/bestapp/" class="btn" target="_blank">view project</a>
                                 </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- portfolio section end -->
+            <!-- Certificate section start -->
+            <section class="certificate section hidden" id="certificate">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>certificate</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <img src="./assets/img/Phan Van Tam HTML & CSS Certificate.png" alt="">
+                                </div>
+                            </div>
+                            <div class="certificate-content padd-15">
+                                <h2>HTML, CSS</h2>
+                                <a href="#" class="btn">view certificate</a>
+                            </div>
+                        </div>
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <img src="./assets/img/Phan Van Tam JavaScript Basic Certificate.png" alt="">
+                                </div>
+                            </div>
+                            <div class="certificate-content padd-15">
+                                <h2>JavaScript Basic</h2>
+                                <a href="#" class="btn">view certificate</a>
+                            </div>
+                        </div>
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <img src="./assets/img/Phan Van Tam JavaScript Advanced Certificate.png" alt="">
+                                </div>
+                            </div>
+                            <div class="certificate-content padd-15">
+                                <h2>Javascript Advanced</h2>
+                                <a href="#" class="btn">view certificate</a>
+                            </div>
+                        </div>
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <img src="./assets/img/Phan Van Tam Build Website With ReactJS Certificate.png" alt="">
+                                </div>
+                            </div>
+                            <div class="certificate-content padd-15">
+                                <h2>ReactJS</h2>
+                                <a href="#" class="btn">view certificate</a>
+                            </div>
+                        </div>
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <img src="./assets/img/certificate-coursera.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="certificate-content padd-15">
+                                <h2>Wordpress</h2>
+                                <a href="#" class="btn">view certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Certificate section end -->
             <!-- contact section start  -->
             <section class="contact section hidden" id="contact">
                 <div class="container">
@@ -453,7 +522,7 @@
                 <i class="fas fa-cog fa-spin"></i>
             </div>
             <div class="day-night s-icon">
-                <i class="fas fa-moon"></i>
+                <i class="fas "></i>
             </div>
             <h4>Theme Colors</h4>
             <div class="colors">
@@ -470,6 +539,9 @@
 
 
     <!-- script  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/style-switcher.js"></script>
 </body>
 </html>
