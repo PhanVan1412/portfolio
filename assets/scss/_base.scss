@@ -60,7 +60,6 @@ body {
     }
 }
 .container {
-    min-width: 110rem;
     width: 100%;
     padding-top: 6rem;
     padding-bottom: 7rem;
@@ -80,6 +79,7 @@ ul {
     padding-right: 1.5rem;
 }
 .btn {
+    text-align: center;
     font-size: 1.6rem;
     font-weight: 500;
     padding: 1.2rem 3.5rem;

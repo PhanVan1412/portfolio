@@ -5,8 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Porfolio</title>
+    <!-- CSS Files -->
     <link rel="stylesheet" href="./assets/css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Style Switcher -->
+    <link rel="stylesheet" href="./assets/css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="./assets/css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="./assets/css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="./assets/css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="./assets/css/skins/color-5.css" class="alternate-style" title="color-5">
+    <link rel="stylesheet" href="./assets/css/style-switcher.css">
+    <!-- Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -25,10 +34,10 @@
             <div class="nav">
                 <ul>
                     <li><a href="#" class="active"><i class="fas fa-home"></i>home</a></li>
-                    <li><a href="#about"><i class="fas fa-user"></i>about</a></li>
-                    <li><a href="#portfolio"><i class="fas fa-briefcase"></i>portfolio</a></li>
-                    <li><a href="#contact"><i class="fas fa-comments"></i>contact</a></li>
-                    <li><a href="#services"><i class="fas fa-list"></i>services</a></li>
+                    <li><a href="#about" id="about-link"><i class="fas fa-user"></i>about</a></li>
+                    <li><a href="#portfolio" id="portfolio-link"><i class="fas fa-briefcase"></i>portfolio</a></li>
+                    <li><a href="#contact" id="contact-link"><i class="fas fa-comments"></i>contact</a></li>
+                    <li><a href="#service" id="service-link"><i class="fas fa-list"></i>services</a></li>
                 </ul>
             </div>
         </div>
@@ -36,7 +45,7 @@
         <!-- main content -->
         <div class="main-content">
             <!-- home section starts -->
-            <section class="home section hidden">
+            <section class="home section">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -87,7 +96,7 @@
                                             <p>email : <span>phanvantam2020@gmail.com</span></p> 
                                          </div>
                                          <div class="info-item padd-15">
-                                            <p>degree : <span>Inter Frontend</span></p> 
+                                            <p>degree : <span>Intern Frontend</span></p> 
                                          </div>
                                          <div class="info-item padd-15">
                                             <p>phone : <span>+84 854 821 811</span></p> 
@@ -100,7 +109,7 @@
                                          </div>
                                     </div>
                                     <div class="buttons padd-15">
-                                        <a href="#" class="btn"> Dowload CV</a>
+                                        <a href="https://assets.topdev.vn/files/2022/03/18/TopDev-PhanVanTam0854821811e-1647598784.pdf" class="btn"> Dowload CV</a>
                                         <a href="tel:+84854821811" class="btn">Connect me</a>
                                     </div>
                                 </div>
@@ -269,7 +278,7 @@
                                 </div>
                                 <div class="portfolio-content padd-15">
                                     <h2>Bookly Store</h2>
-                                    <a href="#" class="btn">view project</a>
+                                    <a href="https://phanvan1412.github.io/book-store/" class="btn">view project</a>
                                 </div>
                             </div>
                         </div>
@@ -280,7 +289,7 @@
                                 </div>
                                 <div class="portfolio-content padd-15">
                                     <h2>Best mobile app</h2>
-                                    <a href="#" class="btn">view project</a>
+                                    <a href="https://phanvan1412.github.io/bestapp/" class="btn">view project</a>
                                 </div>
                             </div>
                         </div>
@@ -302,7 +311,7 @@
                                 </div>
                                 <div class="portfolio-content padd-15">
                                     <h2>Foody</h2>
-                                    <a href="#" class="btn">view project</a>
+                                    <a href="https://phanvan1412.github.io/restaurent-food/" class="btn">view project</a>
                                 </div>
                             </div>
                         </div>
@@ -313,7 +322,7 @@
                                 </div>
                                 <div class="portfolio-content padd-15">
                                     <h2>Bookly Store</h2>
-                                    <a href="#" class="btn">view project</a>
+                                    <a href="https://phanvan1412.github.io/book-store/" class="btn">view project</a>
                                 </div>
                             </div>
                         </div>
@@ -324,7 +333,7 @@
                                 </div>
                                 <div class="portfolio-content padd-15">
                                     <h2>Bookly Store</h2>
-                                    <a href="#" class="btn">view project</a>
+                                    <a href="https://phanvan1412.github.io/bestapp/" class="btn">view project</a>
                                 </div>
                         </div>
                     </div>
@@ -332,20 +341,134 @@
             </section>
             <!-- portfolio section end -->
             <!-- contact section start  -->
-            <section class="contact section" id="contact">
+            <section class="contact section hidden" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
                             <h2>contact me</h2>
                         </div>
                     </div>
+                    <h3 class="contact-title padd-15">Have You Any questions</h3>
+                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+                    <div class="row">
+                        <!-- contact info item start -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fas fa-phone"></i></div>
+                            <h4>Call us on</h4>
+                            <a href="tel:+84854821811">+84 854 821 811</a>
+                        </div>
+                        <!-- contact info item end -->
+                        <!-- contact info item start -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <h4>address</h4>
+                            <p>District 9, Ho Chi Minh City</p>
+                        </div>
+                        <!-- contact info item end -->
+                        <!-- contact info item start -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <a href="mailto:phanvantam2020@gmail.com">phanvantam2020@gmail.com</a>
+                        </div>
+                        <!-- contact info item end -->
+                        <!-- contact info item start -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa-solid fa-globe"></i></div>
+                            <h4>website</h4>
+                            <a href="#">demo.com</a>
+                        </div>
+                        <!-- contact info item end -->
+                    </div>
+                    <h3 class="contact-title padd-15">Send Me An Email</h3>
+                    <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
+                    <!-- contact form start -->
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="contact-form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" name="" id="" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="contact-form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" name="" id="" class="form-control" placeholder="Mail">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="contact-form-item col-12 padd-15">
+                                    <div class="contact-form-group">
+                                        <input type="text" name="" id="" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="contact-form-item col-12 padd-15">
+                                    <div class="contact-form-group">
+                                        <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="contact-form-item col-12 padd-15">
+                                    <div class="contact-form-group">
+                                        <button type="submit" class="btn">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- contact section end -->
+            <!-- services section start -->
+            <section class="service section hidden" id="service">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Motivational sayings</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="content">
+                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, nostrum?</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit tenetur nulla quas enim deserunt consequatur eligendi, dignissimos ut vel beatae autem similique eius doloremque aperiam veritatis quasi velit soluta!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit tenetur nulla quas enim deserunt consequatur eligendi, dignissimos ut vel beatae autem similique eius doloremque aperiam veritatis quasi velit soluta!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit tenetur nulla quas enim deserunt consequatur eligendi, dignissimos ut vel beatae autem similique eius doloremque aperiam veritatis quasi velit soluta!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit tenetur nulla quas enim deserunt consequatur eligendi, dignissimos ut vel beatae autem similique eius doloremque aperiam veritatis quasi velit soluta!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="credit">Made with love <i class="fa-solid fa-heart"></i> <span>P&T</span> </div>
+                    </div>
+                </div>
+            </section>
+            <!-- services section end -->
         </div>
-        
+        <!-- Style Switcher Start -->
+        <div class="style-switcher">
+            <div class="style-switcher-toggler s-icon">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="day-night s-icon">
+                <i class="fas fa-moon"></i>
+            </div>
+            <h4>Theme Colors</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+        </div>
+        <!-- Style Switcher End -->
     </div>
     <!-- Main Container Ends -->
+
+
     <!-- script  -->
     <script src="./assets/js/app.js"></script>
 </body>

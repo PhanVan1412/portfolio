@@ -66,7 +66,6 @@ body {
 }
 
 .container {
-  min-width: 110rem;
   width: 100%;
   padding-top: 6rem;
   padding-bottom: 7rem;
@@ -90,6 +89,7 @@ ul {
 }
 
 .btn {
+  text-align: center;
   font-size: 1.6rem;
   font-weight: 500;
   padding: 1.2rem 3.5rem;
@@ -488,6 +488,189 @@ ul {
 }
 .portfolio-content h2 {
   color: #504e70;
+}
+
+.contact-title {
+  color: #ec1839;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.contact-sub-title {
+  color: #302e4d;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 6rem;
+}
+.contact-info-item {
+  flex: 0 0 25%;
+  max-width: 25%;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+.contact-info-item .icon {
+  display: inline-block;
+}
+.contact-info-item .icon i {
+  font-size: 2.5rem;
+  color: #ec1839;
+}
+.contact-info-item h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #302e4d;
+  text-transform: capitalize;
+  margin: 1.5rem 0rem 0.5rem;
+}
+.contact-info-item a, .contact-info-item p {
+  font-size: 1.6rem;
+  color: #504e70;
+  font-weight: 500;
+}
+.contact-form {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.contact-form .btn {
+  height: 5rem;
+  padding: 0rem 5rem;
+}
+.contact-form .col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.contact-form .col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.contact-form-item {
+  margin-bottom: 3rem;
+}
+.contact-form-item textarea {
+  height: 14rem !important;
+  resize: none;
+}
+.contact-form-item .form-control {
+  width: 100%;
+  height: 5rem;
+  border-radius: 2.5rem;
+  background: #fdf9ff;
+  border: 1px solid #e8efec;
+  padding: 1rem 2.5rem;
+  font-size: 1.6rem;
+  color: #504e70;
+  transition: all 0.3s ease;
+}
+.contact-form-item .form-control:focus {
+  box-shadow: 0 0 2rem rgba(48, 46, 77, 0.15);
+}
+
+.service {
+  height: 100vh;
+  overflow-y: hidden;
+}
+.service .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service .container .row .content {
+  width: 80%;
+  height: 48rem;
+  box-shadow: 0 0 2rem rgba(48, 46, 77, 0.15);
+  border-radius: 2rem;
+  padding: 5rem;
+  margin-bottom: 3rem;
+}
+.service .container .row .credit {
+  font-size: 2rem;
+  color: #302e4d;
+  font-weight: bold;
+}
+.service .container .row .credit i {
+  color: red;
+}
+.service .container .row .credit span {
+  color: #ec1839;
+}
+
+@media (max-width: 1199px) {
+  .aside {
+    left: -30rem;
+  }
+
+  .main-content {
+    padding-left: 0;
+  }
+
+  .section {
+    padding-left: 3rem;
+  }
+
+  .about {
+    overflow-x: hidden;
+  }
+  .about-content .personal-info .info-item p span {
+    display: block;
+    margin-left: 0;
+  }
+}
+@media (max-width: 991px) {
+  .contact-item,
+.portfolio-item,
+.service-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .about-content .experience,
+.about-content .education {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .home .home-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home-img {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .home {
+    min-height: 100%;
+  }
+
+  .about-content .experience,
+.about-content .education,
+.about-content .skills,
+.about-content .personal-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .about .buttons {
+    text-align: center;
+  }
+  .about .buttons .btn {
+    width: 45%;
+  }
+
+  .portfolio-item,
+.service-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .portfolio .container .row .content,
+.service .container .row .content {
+    padding: 3rem;
+    overflow: hidden;
+    height: 60rem;
+  }
+
+  .contact-form .col-6, .contact-info-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
