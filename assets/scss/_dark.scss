@@ -119,6 +119,23 @@
             }
         }
     }
+    .certificate {
+        &-heading {
+            h2 {
+                color:$text-black-900;
+            }
+        }
+        &-img {
+            img {
+                border: 1.2rem solid $bg-black-100;
+            }
+        }
+        &-content {
+            h2 {
+                color: $text-black-700;
+            }
+        }
+    }
     .contact {
         &-sub-title {
             color: $text-black-900;

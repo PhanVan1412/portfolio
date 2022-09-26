@@ -721,6 +721,15 @@ p {
 .dark .portfolio-content h2 {
   color: #e9e9e9;
 }
+.dark .certificate-heading h2 {
+  color: #ffffff;
+}
+.dark .certificate-img img {
+  border: 1.2rem solid #222222;
+}
+.dark .certificate-content h2 {
+  color: #e9e9e9;
+}
 .dark .contact-sub-title {
   color: #ffffff;
 }
