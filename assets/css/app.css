@@ -113,6 +113,10 @@ ul {
   display: none !important;
 }
 
+p {
+  line-height: 1.75;
+}
+
 .aside {
   width: 30rem;
   background: #fdf9ff;
@@ -604,6 +608,9 @@ ul {
   height: 100vh;
   overflow-y: hidden;
 }
+.service .container {
+  position: relative;
+}
 .service .container .row {
   display: flex;
   align-items: center;
@@ -617,15 +624,24 @@ ul {
   padding: 5rem;
   margin-bottom: 3rem;
 }
-.service .container .row .credit {
+.service .container .row .content h3 {
+  margin-bottom: 3rem;
+}
+.service .container .row.box-credit {
+  position: absolute;
+  bottom: 6rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.service .container .row.box-credit .credit {
   font-size: 2rem;
   color: #302e4d;
   font-weight: bold;
 }
-.service .container .row .credit i {
+.service .container .row.box-credit .credit i {
   color: red;
 }
-.service .container .row .credit span {
+.service .container .row.box-credit .credit span {
   color: #ec1839;
 }
 

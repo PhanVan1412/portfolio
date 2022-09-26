@@ -2,6 +2,7 @@
     height: 100vh;
     overflow-y: hidden;
     .container {
+        position: relative;
         .row {
             display: flex;
             align-items: center;
@@ -13,16 +14,25 @@
                 border-radius: 2rem;
                 padding: 5rem;
                 margin-bottom: 3rem;
-            }
-            .credit  {
-                font-size: 2rem;
-                color: $text-black-900;
-                font-weight: bold;
-                i {
-                    color: red;
+                h3 {
+                    margin-bottom: 3rem;
                 }
-                span {
-                    color: $skin-color;
+            }
+            &.box-credit {
+                position: absolute;
+                bottom: 6rem;
+                left: 50%;
+                transform: translateX(-50%);
+                .credit  {
+                    font-size: 2rem;
+                    color: $text-black-900;
+                    font-weight: bold;
+                    i {
+                        color: red;
+                    }
+                    span {
+                        color: $skin-color;
+                    }
                 }
             }
         }

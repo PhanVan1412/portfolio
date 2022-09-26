@@ -1,13 +1,4 @@
-// var home = document.querySelector('.home')
-// var about = document.querySelector('#about');
-// var aboutLink = document.querySelector('#about-link');
-// console.log(about)
-// console.log(home)
-// aboutLink.onclick = function () {
-//     home.classList.add('hidden');
-//     about.classList.remove('hidden');
-//     console.log('hi')
-// }
+
 
 var sections = document.querySelectorAll('.section');
 var logo = document.querySelector('.logo');
