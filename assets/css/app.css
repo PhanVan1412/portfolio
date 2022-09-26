@@ -627,21 +627,22 @@ p {
 .service .container .row .content h3 {
   margin-bottom: 3rem;
 }
-.service .container .row.box-credit {
+.service .container .box-credit {
   position: absolute;
-  bottom: 6rem;
+  width: 80%;
+  text-align: center;
   left: 50%;
   transform: translateX(-50%);
 }
-.service .container .row.box-credit .credit {
+.service .container .box-credit .credit {
   font-size: 2rem;
   color: #302e4d;
   font-weight: bold;
 }
-.service .container .row.box-credit .credit i {
+.service .container .box-credit .credit i {
   color: red;
 }
-.service .container .row.box-credit .credit span {
+.service .container .box-credit .credit span {
   color: #ec1839;
 }
 
@@ -818,9 +819,14 @@ p {
     text-align: center;
   }
   .about .buttons .btn {
-    width: 45%;
+    width: 20rem;
   }
 
+  .portfolio,
+.certificate,
+.service {
+    height: 100%;
+  }
   .portfolio-item,
 .certificate-item,
 .service-item {
@@ -832,7 +838,7 @@ p {
 .service .container .row .content {
     padding: 3rem;
     overflow: hidden;
-    height: 60rem;
+    height: 110rem;
   }
 
   .contact-form .col-6, .contact-info-item {

@@ -75,13 +75,14 @@
         .buttons {
             text-align: center;
             .btn {
-                width: 45%;
+                width: 20rem;
             }
         }
     }
     .portfolio,
     .certificate,
     .service {
+        height: 100%;
         &-item {
             flex: 0 0 100%;
             max-width: 100%;
@@ -90,7 +91,7 @@
             .row .content {
                 padding: 3rem;
                 overflow: hidden;
-                height: 60rem;
+                height: 110rem;
             }
         }
     }
